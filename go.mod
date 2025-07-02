@@ -1,4 +1,4 @@
-module github.com/terraform-linters/tflint-ruleset-template
+module github.com/livelink/tflint-ruleset-syseng
 
 go 1.24.0
 
