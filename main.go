@@ -9,7 +9,7 @@ import (
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
 		RuleSet: &tflint.BuiltinRuleSet{
-			Name:    "template",
+			Name:    "tflint-ruleset-syseng",
 			Version: "0.1.0",
 			Rules: []tflint.Rule{
 				rules.NewAwsInstanceExampleTypeRule(),
