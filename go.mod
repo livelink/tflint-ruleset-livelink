@@ -1,4 +1,4 @@
-module github.com/livelink/tflint-ruleset-syseng
+module github.com/livelink/tflint-ruleset-livelink
 
 go 1.24.0
 
