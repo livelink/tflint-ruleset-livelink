@@ -12,7 +12,8 @@ func main() {
 			Name:    "livelink",
 			Version: "0.1.0",
 			Rules: []tflint.Rule{
-				rules.NewNewrelicNrqlGapFillingRule(),
+				rules.InitNewrelicNrqlGapFillingRule(),
+				rules.InitNewrelicSignalLossRule(),
 			},
 		},
 	})
