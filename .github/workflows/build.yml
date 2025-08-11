@@ -13,7 +13,7 @@ permissions:
 
 jobs:
   test:
-    name: ubuntu-latest
+    name: test then build
     runs-on: ubuntu-latest
     strategy:
       matrix:
