@@ -30,7 +30,7 @@ jobs:
       id: op-load-secrets-env
       uses: 1password/load-secrets-action@v2
       with:
-        export-env: false
+        export-env: true
       env:
         OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         GPG_PRIVATE_KEY: 'op://CI/ygi24imvhns632c23mulf6taqm/private_key'
