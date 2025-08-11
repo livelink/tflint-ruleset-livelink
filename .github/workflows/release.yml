@@ -33,8 +33,8 @@ jobs:
         export-env: true
       env:
         OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
-        GPG_PRIVATE_KEY: 'op://CI/ygi24imvhns632c23mulf6taqm/private_key'
-        GPG_PASSPHRASE: 'op://CI/ygi24imvhns632c23mulf6taqm/password'
+        GPG_PRIVATE_KEY: 'op://CI/zvdciazdapcpu7ly2d44e5bqaa/private_key'
+        GPG_PASSPHRASE: 'op://CI/zvdciazdapcpu7ly2d44e5bqaa/password'
         GITHUB_TOKEN: ''
     - name: Import GPG key
       id: import_gpg
