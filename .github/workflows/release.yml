@@ -34,13 +34,12 @@ jobs:
         OP_SERVICE_ACCOUNT_TOKEN: ${{ secrets.OP_SERVICE_ACCOUNT_TOKEN }}
         GPG_PRIVATE_KEY: 'op://CI/zvdciazdapcpu7ly2d44e5bqaa/private_key'
         GPG_PASSPHRASE: 'op://CI/zvdciazdapcpu7ly2d44e5bqaa/password'
-        GITHUB_TOKEN: ''
     - name: Import GPG key
       id: import_gpg
       uses: crazy-max/ghaction-import-gpg@e89d40939c28e39f97cf32126055eeae86ba74ec # v6.3.0
       with:
-        gpg_private_key: ${{ GPG_PRIVATE_KEY }}
-        passphrase: ${{ GPG_PASSPHRASE }}
+        gpg_private_key: ${{ env.GPG_PRIVATE_KEY }}
+        passphrase: ${{ env.GPG_PASSPHRASE }}
     - name: Run GoReleaser
       uses: goreleaser/goreleaser-action@9c156ee8a17a598857849441385a2041ef570552 # v6.3.0
       with:
