@@ -23,8 +23,7 @@ archives:
     files:
       - none*
 checksum:
-  name_template: 'checksums.sha256'
-  algorithm: sha256
+  name_template: 'checksums.txt'
   extra_files:
     - glob: ./dist/raw/*
 signs:
