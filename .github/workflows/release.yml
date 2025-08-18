@@ -27,7 +27,7 @@ jobs:
           go-version-file: 'go.mod'
       - name: Load secrets from 1Password
         id: op-load-secrets-env
-        uses: 1password/load-secrets-action@v2
+        uses: 1password/load-secrets-action@v3
         with:
           export-env: true
         env:
